@@ -41,30 +41,42 @@ Child2: **Start L3 L2** L5 L6 L2 L4 End
 The problem is, some nodes repeat more than once, and some nodes get lost in crossover. This was solved by changing up the second part of a child before it is added to the first part.*The list of missing nodes* was created, by going through the fist part of a child and removing all the nodes that are already there from the list of all nodes. End node was removed from the list so that when we need to replace reappearing node, end isn't available for selection. So the example would actually look like this (for one child):
 
 Parent1: Start L1 L3 L5 L6 L2 L4 End
+
 Parent2: Start L3 L2 L4 L3 L5 L6 End
 
 Point of Break = 3
 
 0.  Child1: **Start L1 L3**
+    
     List_of_missing_nodes1: L2 L4 L5 L6
+    
     Second_part_of_child1: L4 L3 L5 L6 End
 
 1.  Second_part_of_child1: **L4** L3 L5 L6 End
+    
     List_of_missing_nodes1: L2 **L4** L5 L6 
+    
     Node **is in** the list, we don't need to change *Second_part_of_child1*. **REMOVE** node from the list.
 
 2.  Second_part_of_child1: L4 **L3** L5 L6 End
+    
     List_of_missing_nodes1: L2 L5 L6
+    
     Node is not in the list. That means it already appeared before. We need to replace it. **We RANDOMLY** select a node from the list of missing nodes and replace L3.
     
 3.  Second_part_of_child1: L4 L2 **L5** L6 End
+    
     List_of_missing_nodes1: **L5** L6
 
 4.  Second_part_of_child1: L4 L3 L5 **L6** End
+    
     List_of_missing_nodes1: **L6**
 
 5.  Second_part_of_child1: L4 L3 L5 L6 End
+    
     List_of_missing_nodes1: NULL
+    
     Second part is ready to be added to the first one. So in the end the Child1 would look like this:
+    
     Child1: Start L1 L3 L4 L3 L5 L6 End
     
