@@ -29,11 +29,13 @@ Let's go shortly go, step by step, through each GA phase.
 3. For the next generation we pass on two of the best parent unit's, so that good genetic material can't be lost. The rest of the population is created by crossover between two randomly selected parents. Each pair of parents creates a pair of children. Firstly, we select *point of break*. For the first child, left of that point we take path from the first parent, and right of that point we append second parents path. For the second child we do the opposite. For example:
 
 Parent1: Start L1 L3 L5 L6 L2 L4 End
+
 Parent2: Start L3 L2 L4 L3 L5 L6 End
 
 Point of Break = 3
 
 Child1: **Start L1 L3** L4 L3 L5 L6 End
+
 Child2: **Start L3 L2** L5 L6 L2 L4 End
 
 The problem is, some nodes repeat more than once, and some nodes get lost in crossover. This was solved by changing up the second part of a child before it is added to the first part.*The list of missing nodes* was created, by going through the fist part of a child and removing all the nodes that are already there from the list of all nodes. End node was removed from the list so that when we need to replace reappearing node, end isn't available for selection. So the example would actually look like this (for one child):
