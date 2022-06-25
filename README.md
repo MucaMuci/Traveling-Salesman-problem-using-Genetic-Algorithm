@@ -52,25 +52,30 @@ Point of Break = 3
     
     Second_part_of_child1: L4 L3 L5 L6 End
 
+
 1.  Second_part_of_child1: **L4** L3 L5 L6 End
     
     List_of_missing_nodes1: L2 **L4** L5 L6 
     
     Node **is in** the list, we don't need to change *Second_part_of_child1*. **REMOVE** node from the list.
 
+
 2.  Second_part_of_child1: L4 **L3** L5 L6 End
     
     List_of_missing_nodes1: L2 L5 L6
     
     Node is not in the list. That means it already appeared before. We need to replace it. **We RANDOMLY** select a node from the list of missing nodes and replace L3.
-    
+ 
+ 
 3.  Second_part_of_child1: L4 L2 **L5** L6 End
     
     List_of_missing_nodes1: **L5** L6
 
+
 4.  Second_part_of_child1: L4 L3 L5 **L6** End
     
     List_of_missing_nodes1: **L6**
+
 
 5.  Second_part_of_child1: L4 L3 L5 L6 End
     
