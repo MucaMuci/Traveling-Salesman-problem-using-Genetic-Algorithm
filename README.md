@@ -85,3 +85,4 @@ Point of Break = 3
     
     Child1: Start L1 L3 L4 L3 L5 L6 End
     
+4. Only thing left is mutation, and it is simply achieved by swapping 2 nodes (locations) in one unit. Only rule is that start and end nodes have to remain the same.
