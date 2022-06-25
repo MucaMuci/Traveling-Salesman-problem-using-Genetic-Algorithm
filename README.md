@@ -2,7 +2,7 @@
 Solving Traveling Salesman problem using my custom made Genetic Algorithm.
 
 ## What are Genetic Algorithms?
-Short description, classic genetic algorithm consist of 4 phases:
+Classic genetic algorithm consist of 4 phases:
 1. Create starting population
 2. Determine each unit's fitness function
 4. Create reproduction pool (Selection)
@@ -15,4 +15,7 @@ This process is repeated until number of iterations reaches its maximum (that we
 - Crossover takes one or two (or even more) parent units and crossess their genes to create child unit.
 - Mutation is random and usually rare (to avoid complete randomness).
 
-## 
+## Traveling Salesman problem
+In short, traveling salesman problem answers the question: *"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city"*.
+For this project we used a bit modified traveling salesman problem: *"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once **and get to the end city**"*
+
