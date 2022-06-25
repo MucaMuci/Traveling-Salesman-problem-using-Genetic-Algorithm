@@ -16,6 +16,9 @@ This process is repeated until number of iterations reaches its maximum (that we
 - Mutation is random and usually rare (to avoid complete randomness).
 
 ## Traveling Salesman problem
-In short, traveling salesman problem answers the question: *"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city"*.
-For this project we used a bit modified traveling salesman problem: *"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once **and get to the end city**"*
+In short, traveling salesman problem answers the question: 
+*"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city"*.
+
+For this project we used a bit modified traveling salesman problem: 
+*"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once **and get to the end city**"*
 
