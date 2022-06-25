@@ -8,7 +8,7 @@ Short description, classic genetic algorithm consist of 4 phases:
 4. Create reproduction pool (Selection)
 5. Crossover and mutation
 
-Aaaand repeat. This process is repeated until number of iterations reaches its maximum (that we defined). Also some things need to be noted: 
+This process is repeated until number of iterations reaches its maximum (that we defined). Also some things need to be noted: 
 - Starting population is created randomly or pseudo-randomly.
 - Fitness function is a crucial part of each GA and is also specific for each domain. It determines the goodness of unit by some measures.
 - Selection takes the best units by fitness function and lets them pass on their genes.
